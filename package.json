@@ -1,0 +1,24 @@
+{
+  "name": "userscript-webpack-skeleton",
+  "version": "0.1.0",
+  "description": "A skeleton for userscript development utilizing webpack",
+  "scripts": {
+    "build": "webpack --config-register esm"
+  },
+  "author": "martixy",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "esm": "^3.0.82",
+    "pj2us-transformer": "^0.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "userscript": {
+    "grant": [
+      "GM_info"
+    ],
+    "match": "https://www.google.com/"
+  }
+}
