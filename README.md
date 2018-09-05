@@ -6,7 +6,8 @@ A basic skeleton for developing userscripts in node / webpack.
 1. Pull down, run `yarn install` or `npm install`.
 2. Open a terminal and do `yarn run build` or `npm run build`. This should build the application.
 3. Go to the `dist/` folder - there should be 2 files there. A `main.js` and a `local.user.js`.
-4. Go to your userscript manager, create a new script, copy the contents of `local.user.js` and save.
+4. Go to your userscript manager, create a new script, copy the contents of `local.user.js` and save. This is a one-time process(until you change the build process).
+**Important!** To enable this workflow, the extension that runs your script needs access to file URLs. Currently only Chrome has a setting for this feature (that I know of; Not even the chromium-based opera does). To toggle the setting go to your extensions, locate the userscript manager(e.g. Tampermonkey), go to details and turn on "Allow access to file URLs". This isn't necessary if the script is published somewhere on the web.
 5. Nagivate to www.google.com and open the console. You should be greeted by a "Hello World!" message.
 
 ## Usage
