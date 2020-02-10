@@ -2,7 +2,7 @@
 import path from 'path'
 import pj2us from 'pj2us-transformer';
 import CopyWebpackPlugin from 'copy-webpack-plugin'
-import CleanWebpackPlugin from 'clean-webpack-plugin'
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 
 const defaultConf = {
     name: 'default',
@@ -12,7 +12,7 @@ const defaultConf = {
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(),
         new CopyWebpackPlugin([ {
         from: 'package.json',
         to: path.resolve(__dirname, 'dist') + '/local.user.js',
